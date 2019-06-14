@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 在es6中 函数可以设置默认参数 
+
+        // function add(n1, n2) {
+        //     n1 = n1 || 0;
+        //     n2 = n2 || 0;
+        //     console.log(n1 + n2);            
+        // }
+
+        // 当没有传递参数是，取默认值 
+        function add(n1 = 0, n2 = 0) {
+            console.log(n1 + n2);            
+        }
+
+        add();   //NaN
+        add(1);  // 1 +undefined  NaN
+        add(1, 2);  // 3
+        add(1, 2, 3, 4);  // 3
+        
+    </script>
+</body>
+</html>

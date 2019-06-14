@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 解构赋值：  分解结构， 进行赋值 
+        // 作用： 可以快速定义多个变量并且给变量赋值 
+        
+
+        // 对象解构
+        // 数组解构  
+
+        // [1, 2, 3]
+        // {name: zs, age: 18}
+
+        let obj = {
+            name: '狗蛋',
+            age: 18
+        }
+
+        // let name = obj.name;
+        // let age = obj.age; 
+
+        // 解构过程： 把对象属性值，赋值给同名变量
+        // let {name, age} = {name: '狗蛋', age: 18};
+        // let {name, age} = {name: '狗蛋', age: 18};
+        // 变量名和属性名不同的情况
+        // let {name:userName, age} = {name: '狗蛋', age: 18};        
+        // console.log(userName, age);
+        // 设置默认值（如果可能解构失败可以设置默认值， 默认值是备胎）
+        // let {name, age, sex ='女'} = {name: 'zs', age: 18, sex: '男'};
+        // console.log(name, age, sex);
+
+
+        //数组解构
+        let arr = [2, 3, 4];
+
+        // let [c1, c2, c3] = arr;
+        //之取部分值 
+        // let [, c1, ] = arr;
+        // console.log(c1); 
+
+        let [c1, c2, c3, c4 = 'a'] = arr;
+
+        // console.log(c1, c2, c3, c4);
+
+        // 小结：
+        // 对象解构：
+        // let {name, age} = {name: 'zs', age: 18}
+        // let {name:userName, age} = {name: 'zs', age: 18}
+        // let {name, age, sex = 'm' } = {name: 'zs', age: 18}
+
+        // 数组解构：
+        // let [c1, c2] = [1, 2];
+        // let [, c1] = [1, 2];
+
+        // 函数参数结构赋值
+        function say( {name, age, sex} ) {
+            // console.log(person.name, person.age, person.sex);        
+            // let {name, age, sex} = person;
+            console.log(name, age, sex);    
+        }
+
+        say({name: 'zs', age: 10, sex: '男'});
+
+        // 函数在调用时， 实参会给形参进行赋值
+        // let {name, age, sex} = {name: 'zs', age: 10, sex: '男'}
+
+        
+            
+        
+        
+        
+
+
+
+
+    </script>
+</body>
+</html>

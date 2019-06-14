@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 展开运算符（...)
+        // 展开数组
+        let arr1 = [1, 2, 3];
+
+        let arr2 = ['a', 'b', 'c']; 
+
+        // arr2 = arr2.concat(arr1);
+
+        // console.log(arr2);
+
+        // let arr2 = ['a', 'b', 'c', ...arr1];
+
+        // console.log(arr2);
+
+        let arr3  = [4, ...arr1, 5, ...arr2, 6];
+        // console.log(arr3);
+
+        // 展开对象
+        let obj1 = {
+            name: '鹏鹏'
+        }
+
+        let obj2 = {
+            age: 18,
+            sex: '男'
+        }
+
+        let obj3 = {
+            hobby: '呜呜呜',
+            ...obj1,
+            ...obj2,
+            say() {
+                alert('我女朋友是,翠花');
+            }
+        }
+
+        console.log(obj3);
+        
+        
+        
+        
+
+
+    </script>
+</body>
+</html>

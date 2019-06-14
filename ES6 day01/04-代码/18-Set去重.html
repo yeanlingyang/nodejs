@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 3, 2];
+
+        // let  newArr = [];
+
+        // arr = [...new Set(arr)];
+
+        // console.log(arr);
+
+        // new Set() 可以得到一个set实例， set是一个集合，可以存储数据唯一值
+
+        // var  set = new Set(); 
+
+        var set = new Set(arr);  //  {1, 2, 3, 4} 
+
+        var arr = [...set];
+
+        console.log(arr);
+
+
+        // 小结：
+        // Set 可以得到set实例， 可以存放数据的唯一值； 
+        // [...set] //将set实例展开成数组
+
+        
+        
+
+
+        
+
+    </script>
+</body>
+</html>

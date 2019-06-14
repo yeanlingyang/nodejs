@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // arr.filter()  会返回一个新数组， 新数组中 存放的是 符合条件元素；  
+    // filter 过滤 
+    // arr.filter(function (item, index, array) {
+        // return 条件
+    // })
+
+    var money = [10000, 8000, 5, 20000, 2000];
+    // 找出工资小于10000的
+    // var newArr = [];
+    // money.forEach(function (v) {
+    //     if (v < 10000) {
+    //         newArr.push(v);
+    //     }
+    // })
+    // console.log(newArr);
+
+    var r = money.filter(function (v, i, arr1) {
+        return v < 10000;
+    })
+
+    console.log(r);
+
+    // 小结：
+    // filter() 返回一个数组， 数组中存放时满足条件元素
+    // money.filter (function () {
+        // return 条件 
+    // })
+
+      
+    
+    </script>
+</body>
+</html>

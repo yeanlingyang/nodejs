@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // some 一些   every 每一个
+        // arr.some(function (item, index, array) { return 条件})
+        // arr.every(function (item, index, array) { return 条件} )
+        // some() 判断数组中是否有一个或者多个元素满足条件
+        // every() 判断是否所有的元素都满足条件 
+        // 返回 true false 
+
+        var money = [10000, 8000, 5, 20000, 2000];
+
+        // 判断是否有人工资大于10000
+        var r = money.some(function (v) {
+            return  v > 10000;
+        });
+
+        console.log(r);
+
+        // 判断是否所有人工资都大于10000
+       var r1 =  money.every(function (v) {
+            return v > 10000;
+       })
+        
+        console.log(r1);
+
+
+        // 小结： 
+        // some() 判断是否有一个或者多个元素满足条件
+        // every() 判断是否所有元素都满足条件 
+        // forEach() 
+        // map() 
+        // filter()
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 回调函数：
+        // 1-分析代码执行过程 
+        // 2-结果
+        // 3- 那些是形成  那些是实参 
+
+        // fn 是一个函数 
+        function test (fn) {
+            var num1 = 100;
+            fn(num1);
+        }
+
+
+        test(function (n) {
+            n * 2;
+        });
+
+    </script>
+</body>
+</html>

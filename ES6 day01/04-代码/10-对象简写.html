@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 对象简写
+        // 1- 如果对象名和属性名相同， 可以只写一个 
+        // 2- 对象中方法 可以省略 :function  
+
+        let name = '翠花';
+        let age = 18;
+
+        let obj = {
+            name: name, 
+            age: age,
+            sex: '男',
+            say: function () {
+                alert('我男朋友是， 鹏鹏');
+            },
+            hi: function (){
+                alert('就是鹏鹏!!');
+            }
+        }
+
+
+        let obj1 = {
+            name,
+            age,
+            sex: '男',
+            say() {
+                alert('我男朋友是， 鹏鹏');
+            }, 
+            hi () {
+                alert('还是鹏鹏');
+            }
+        }
+
+        console.log(obj1.name);
+        obj1.say();
+        
+
+
+        // $.ajax({
+        //     url: '',
+        //     data:{
+        //         page,
+        //         pageSize
+        //     }
+        // })
+
+        // 小结： 
+        // 1- 属性名和变量名相同 可以只写一个
+        // 2- 方法可以省略 :function
+
+    </script>
+</body>
+</html>

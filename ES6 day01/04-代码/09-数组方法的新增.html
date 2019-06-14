@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 数组新方法
+    // find(); 遍历数组，返回符合条件的第一个元素；
+    // findIndex(); 遍历数组，返回第一个符合条件的元素下标；
+
+    var money = [10000, 8000, 5, 20000, 2000];
+
+    // 获取第一个工作低于5000数据 
+
+    var r = money.find(function (v) {
+        return v < 5000;
+    });
+
+    console.log(r);
+
+    var index =  money.findIndex(function (v) {
+        return v < 5000;
+    })
+    
+    console.log(index);   
+    
+
+    </script>
+</body>
+</html>

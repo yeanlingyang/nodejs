@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义变量方式  let  const  var
+        //  var 
+        // 1- 变量会提升 
+        // 2- 全局作用域 和 函数作用域 
+
+
+        // let const 特点：
+        // 1- 变量不会提升 (先定义，后使用)
+        // 2- 变量不能重复定义(不能重名)
+        // 3- 有块级作用域  块： {}
+
+
+        // var num = 100;
+
+        // function num () {
+        //     alert('嘿嘿');
+        // }
+
+        // num();
+
+        // function say() {
+        //     var num1 = 100;
+        // }
+
+        // if (3 > 2) {
+        //     var num2 = 200;
+        // }
+
+        // for(var i =0; i< 10; i++) { }
+
+
+        // console.log(num);
+        
+        // var num = 100;
+
+      
+        
+        // let num = 100;
+
+        // console.log(num);
+
+        // let num = 200;
+
+        // function num(){
+
+        // }
+        // let num3 = 300;
+        // 块级作用域 
+        if (3 > 2) {
+            var num1 = 100;
+            let num2 = 200;
+            console.log(num1, num2);            
+        }
+
+        console.log(num1);
+        console.log(num2);
+
+        // 小结：
+        // let const 
+        // 1- 变量不提升
+        // 2- 变量不能重复 
+        // 3- 块级作用域 
+
+        
+
+
+    </script>
+</body>
+</html>

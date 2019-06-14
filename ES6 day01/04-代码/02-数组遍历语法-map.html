@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // arr.map(function (item, index, array) {})  
+    // arr.map()  执行时 会先创建一个空数组，空数组中存放的是 每个元素被function 处理的结果， 最后会返回这个新数组；
+
+    var arr = [1, 2, 3, 4];  // [1, 4, 9, 16]
+    // 得到一个新数组， 数组中存放的是 arr每个元素平方 
+    // var newArr = [];
+    // arr.forEach(function (v) {
+    //     newArr.push( v * v);
+    // })
+    // console.log(newArr);
+
+    // [1, 4, 9, 16]
+    var r = arr.map(function (v) {
+        return v * v;
+    })
+
+    console.log(r);
+
+    // 小结：
+    // map()  会返回一个新数组，新数组中存放的 原数组中 元素被处理结果；
+    
+    
+
+
+    </script>
+</body>
+</html>

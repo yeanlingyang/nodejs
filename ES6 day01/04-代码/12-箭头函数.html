@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 新增的定义函数的方式 箭头函数 
+        // 定义函数  用是箭头 => 
+        // 箭头函数 也是函数表达式 
+        // var 变量  = function (参数列表) {函数体}
+        // 箭头函数定义：
+        // var 变量 = (参数列表) => {函数体} 
+
+        let add  = function (n1, n2) {
+            console.log(n1 + n2);            
+        }
+
+        let big = function (num) {
+            console.log(num * 10);            
+        }
+
+        // 改成箭头函数
+
+        let add1 = (n1, n2) => {
+            console.log(n1 + n2);            
+        }
+
+        let big1 = (num) => {
+            console.log(num * 10)
+        }
+
+        add1(1, 2);
+        big1(20);
+    </script>
+</body>
+</html>

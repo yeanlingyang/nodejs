@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 1- 箭头函数内部没有自己的this, 使用this是外部函数的this 
+    // 2- 箭头函数不能作为构造函数 
+
+    let obj = {
+        name: 'zs',
+        age: 20,
+        say() {
+            // this --> obj 
+            console.log(this);
+            // 保存外部this
+            let that = this;            
+            setTimeout(function () {
+                // this --> window
+                console.log(this);                
+                console.log(that.age);                
+            }, 500);
+        },
+        hi() {
+            console.log(this);            
+            setTimeout(() => {
+                console.log(this);
+                console.log(this.name);
+            }, 500);
+        }
+    }
+
+    // obj.say();
+    obj.hi();
+
+
+    function Person (name, age, sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex; 
+    }
+    </script>
+</body>
+</html>

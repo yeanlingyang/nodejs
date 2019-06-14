@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 箭头函数的简写
+        // let 变量 = （参数列表） => {函数体}
+        // 1- 只有一个参数， 可以省略（）
+        // 2- 函数体只有一行代码，可以省略 {} 和 return 
+
+        // let add1 = (n1, n2) => {
+        //     console.log(n1 + n2);
+        //     return n1 + n2;            
+        // }
+
+        // let add2 = (n1, n2) => {           
+        //     return n1 + n2;            
+        // }
+
+        // let big1 = (num) => {
+        //     console.log(num * 10);
+        //     return num * 10;            
+        // }
+
+        // let big2 = (num) => {
+        //     return num * 10;
+        // }
+
+        // 简化参数
+        let add1 = (n1, n2) => {
+            console.log(n1 + n2);
+            return n1 + n2;            
+        }
+
+        let add2 = (n1, n2) => {           
+            return n1 + n2;            
+        }
+
+        let big1 = num => {
+            console.log(num * 10);
+            return num * 10;   
+        }
+
+        let big2 = num => {
+            return num * 10;
+        }
+
+        // 简化函数体
+        let add1 = (n1, n2) => {
+            console.log(n1 + n2);
+            return n1 + n2;            
+        }
+
+        let add2 = (n1, n2) =>  n1 + n2; 
+
+
+        let big1 = num => {
+            console.log(num * 10);
+            return num * 10;   
+        }
+
+        let big2 = num => num * 10 ; 
+
+        // 简化： 
+        // 1- 只有一个函数，省略（）
+        // 2- 函数体只有一行代码，可以省略{} 和 return 
+
+
+       
+
+
+
+
+
+    </script>
+</body>
+</html>
