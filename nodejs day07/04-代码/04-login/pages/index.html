@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <title>添加</title>
+    <style>
+        body {           
+            background: url('../assets/img/bg1.png') no-repeat top left;
+            background-color: rgba(238, 237, 235, 1);
+            background-size: 100% auto;  
+        }
+        .page-header {
+          border:none;
+        }
+        .page-header h1 {
+            color: #337ab7;
+        }
+        
+        .container {
+            padding-top: 40px;
+            padding-bottom: 60px;
+            max-width: 970px;
+        }
+
+        .title {
+            font-size: 24px;
+        }
+        .media img {
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        .delete,
+        .delete:hover {
+            color: #fff;
+            font-size: 22px;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+
+        .send {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header clearfix">
+            <h1 class="pull-left">黑马留言板</h1>
+            <a href="/logout" class="btn btn-danger pull-right btn-lg send" style="margin-left: 20px">它要退出</a>
+            <a href="./add" class="btn btn-primary pull-right btn-lg send">我要留言</a>
+           
+        </div>
+        <!-- 内容 -->
+        <div class="lyb-body">
+            {{ each list v i }}
+            <div class="panel panel-primary">
+                <!-- 标题 -->
+                <div class="panel-heading clearfix">
+                    <!-- 标题 -->
+                    <span class="title pull-left"> {{ v.title }} </span>
+                    <!-- 删除 -->
+                    <a href="/delete?id={{ v.id }}" class="delete pull-right glyphicon glyphicon-trash"></a>
+              
+                </div>
+                <!-- 主体 -->
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../assets/img/img.jpg" >
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">作者：{{ v.nickname }}</h4>
+                            <p>{{ v.content }}</p>
+                            <p class="text-right"> {{ v.created }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ /each }}
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

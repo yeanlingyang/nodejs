@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Sign in &laquo; Admin</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+  <div class="login">
+    <form class="login-wrap" action="/login" method="post">
+      <img class="avatar" src="../assets/img/img.jpg">
+      <div class="form-group">
+        <label for="username" class="sr-only">用户名</label>
+        <input 
+          id="username" 
+          type="text" 
+          class="form-control" 
+          placeholder="用户名" 
+          autofocus
+          name="username"      
+        >
+      </div>
+      <div class="form-group">
+        <label for="password" class="sr-only">密码</label>
+        <input 
+          id="password" 
+          type="password" 
+          class="form-control" 
+          placeholder="密码"
+          name="password"
+        >
+      </div>     
+      <input  class="btn btn-primary btn-block" type="submit" value="登录">
+    </form>
+  </div>
+</body>
+</html>
